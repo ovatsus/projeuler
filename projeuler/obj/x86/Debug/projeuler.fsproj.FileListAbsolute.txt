@@ -1,0 +1,6 @@
+E:\My Web Sites\projeuler\projeuler\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\My Web Sites\projeuler\projeuler\bin\Debug\projeuler.XML
+E:\My Web Sites\projeuler\projeuler\bin\Debug\projeuler.exe
+E:\My Web Sites\projeuler\projeuler\bin\Debug\projeuler.pdb
+E:\My Web Sites\projeuler\projeuler\obj\x86\Debug\projeuler.exe
+E:\My Web Sites\projeuler\projeuler\obj\x86\Debug\projeuler.pdb
