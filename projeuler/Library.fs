@@ -1,4 +1,5 @@
 ﻿namespace Euler
+open System.Numerics
 
 module Library = 
     // newton's method sqrt
@@ -24,7 +25,7 @@ module Library =
     
         
     // factorial 
-    let rec factorial x = 
+    let rec factorial (x:bigint) = 
         match x with 
             | 1 ->  1
             | _ when x <= 0 -> 0
