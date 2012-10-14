@@ -1,12 +1,18 @@
 ﻿namespace Euler
 open Library
+open System
 
 module Working = 
 
     let prob3 x = x*x
 
-    // Find the sum of the digits in the number 100!
-    let prob20 = 
-        let fact100 = factorial 100
 
-        fact100.ToString().ToCharArray() |> Array.sum
+        
+ 
+//    let prob5 = 
+//        let primes10 = sieve 10
+        
+//        let rec all_diviaible x = 
+//            match x with 
+//              | 1 -> 1 
+//              | _ -> all_divisible x-1

@@ -25,9 +25,9 @@ module Library =
     
         
     // factorial 
-    let rec factorial (x:bigint) = 
+    let rec factorial (x:bigint) =  
         match x with 
-            | 1 ->  1
-            | _ when x <= 0 -> 0
-            | _ -> x * factorial (x - 1) 
+            | _ when x = 1I ->  1I
+            | _ when x <= 0I -> 0I
+            | _ -> x * factorial (x - 1I) 
 
