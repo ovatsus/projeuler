@@ -1,5 +1,7 @@
 ﻿namespace Euler
 open System.Numerics
+open System
+
 
 module Library = 
     // newton's method sqrt
@@ -41,6 +43,9 @@ module Library =
 
     // least common multiple
     let lcm x y = abs (x*y)/gcd x y 
+
+    // map a list to an integer, then sum
+    let maptoIntAndSum = Array.map(fun (x:char) -> Convert.ToInt32(x)-48) >> Array.sum
 
     // factor 
     let factorization x = 
