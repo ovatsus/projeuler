@@ -42,6 +42,8 @@
   <ItemGroup>
     <Compile Include="Library.fs" />
     <Compile Include="Prob1-10.fs" />
+    <Compile Include="Prob11-20.fs" />
+    <Compile Include="Prob21-30.fs" />
     <Compile Include="Working.fs" />
   </ItemGroup>
   <PropertyGroup>

@@ -24,15 +24,13 @@ module Library =
                 let new_primeslist = List.filter (fun x -> x % primeslist.Head <> 0L) primeslist
                 findprimes new_primeslist new_primes
         findprimes numbers []
-    
         
     // factorial 
-    let rec factorial (x:bigint) =  
+    let rec factorial x =  
         match x with 
-            | _ when x = 1I ->  1I
+            | _ when x = 1I -> 1I
             | _ when x <= 0I -> 0I
-            | _ -> x * factorial (x - 1I) 
-
+            | _ -> x * factorial (x-1I)
     
     // greatest common divisor
     let rec gcd x y = 
@@ -47,12 +45,9 @@ module Library =
     // map a list to an integer, then sum
     let maptoIntAndSum = Array.map(fun (x:char) -> Convert.ToInt32(x)-48) >> Array.sum
 
-    // factor 
-    let factorization x = 
-      let primeslist = sieve x
+    // n choose k
+    let n_choose_k n k = factorial n/(factorial k * factorial (n-k))
 
-      let rec factors acc (y:int64) (z:int64) = 
-        match y%z with 
-          | 0L when y = z-> z::acc
-          | 0L when y <> z -> factors (z::acc) (y/z) z
-          | _ -> acc
+    // n choose k with repetitiona
+    let n_choose_k_repetitions n k = factorial (n+k-1I)/(factorial k * factorial (n-1I))
+
